@@ -17,9 +17,13 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
-  useFindAndModify: false,
+  useCreateIndex: true,
   useUnifiedTopology: true
-});
+}).then(res=>{
+        console.log("DB Connected!")
+}).catch(err => {
+  console.log(Error, err.message);
+})
 
 // routes
 app.use(require("./routes/api.js"));

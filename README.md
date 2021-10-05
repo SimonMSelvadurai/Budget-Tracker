@@ -40,10 +40,10 @@ node server.js
 ![image](https://user-images.githubusercontent.com/80757990/135979257-0449c4c0-94e8-48e7-869d-5f04d16baa7f.png)
 
 ## Budget Tracker  
-![Workout Dashboard]![image](https://user-images.githubusercontent.com/80757990/135979699-229ec50c-0cd3-4668-8b6e-03a1571f7dbf.png)
+![image](https://user-images.githubusercontent.com/80757990/135979699-229ec50c-0cd3-4668-8b6e-03a1571f7dbf.png)
 
 ## Budget Tracker Graph
-![Workout Dashboard]![image](https://user-images.githubusercontent.com/80757990/135979784-f9acdc2d-9666-4d11-8373-46b6925a28f9.png)
+![image](https://user-images.githubusercontent.com/80757990/135979784-f9acdc2d-9666-4d11-8373-46b6925a28f9.png)
 
 # Features
 

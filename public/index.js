@@ -1,4 +1,4 @@
-let transactions = [];
+const transactions = [];
 let myChart;
 
 fetch("/api/transaction")
@@ -83,6 +83,8 @@ function sendTransaction(isAdding) {
   let amountEl = document.querySelector("#t-amount");
   let errorEl = document.querySelector(".form .error");
 
+  console.log("nameEl"+nameEl);
+
   // validate form
   if (nameEl.value === "" || amountEl.value === "") {
     errorEl.textContent = "Missing Information";
@@ -105,7 +107,9 @@ function sendTransaction(isAdding) {
   }
 
   // add to beginning of current array of data
-  transactions.unshift(transaction);
+    transactions.unshift(transaction);
+  
+  
 
   // re-run logic to populate ui with new record
   populateChart();
@@ -148,6 +152,7 @@ document.querySelector("#add-btn").onclick = function() {
   sendTransaction(true);
 };
 
+// i need to addevent listener 
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
 };
